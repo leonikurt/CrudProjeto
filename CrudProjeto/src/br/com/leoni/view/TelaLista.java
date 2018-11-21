@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.leoni.view;
 
 import br.com.leoni.dao.DaoProduto;
@@ -11,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.jdesktop.observablecollections.ObservableCollections;
 
@@ -19,7 +15,7 @@ import org.jdesktop.observablecollections.ObservableCollections;
  * @author leoni
  */
 public class TelaLista extends javax.swing.JFrame implements ActionListener{
-
+    
     private DaoProduto dp;
     private TelaEdicao te;
     
@@ -28,7 +24,6 @@ public class TelaLista extends javax.swing.JFrame implements ActionListener{
         dp = new DaoProduto();
         listar();
     }
-    
     
     
     @SuppressWarnings("unchecked")
@@ -49,6 +44,7 @@ public class TelaLista extends javax.swing.JFrame implements ActionListener{
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Cadastro de Produtos");
 
         novo.setText("Novo");
         novo.addActionListener(new java.awt.event.ActionListener() {
