@@ -30,7 +30,12 @@ public class Produto {
     private float preco;
 
     public static final String PROP_CODIGO = "codigo";
-
+    /*
+    Do you know about lombok? With lombok plugin, you can let your code cleaner and instead of create
+    by yourself getter setter methods you could've just used @Getter and @Setter above your class name and default 
+    getter and setter methods will be implicity created in your class. This is nice cause if you had a lot of
+    attributes in your class, it would spare your time and let your code cleaner and more understandable!
+    */
     public int getCodigo() {
         return codigo;
     }
